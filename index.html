@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomery - Florărie Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/components.js"></script>
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">
+                        <i class="fas fa-flower"></i>
+                        <span class="logo-text">BLOOM<span class="accent">ERY</span></span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/"><i class="fas fa-seedling"></i> Acasa</a></li>
+                        <li><a href="#bestsellers"><i class="fas fa-crown"></i> Bestsellers</a></li>
+                        <li><a href="/noutati.html"><i class="fas fa-leaf"></i> Colecții</a></li>
+                        <li><a href="/despre-noi.html"><i class="fas fa-heart"></i> Despre Noi</a></li>
+                    </ul>
+                    <div class="mobile-nav-actions">
+                        <a href="#search" class="action-icon search-icon" title="Căutare">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#account" class="action-icon account-icon" title="Contul Meu">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="cart-wrapper">
+                            <a href="#cart" class="action-icon cart-icon" title="Coș">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <button class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header-actions">
+                    <a href="#search" class="action-icon search-icon" title="Căutare">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#account" class="action-icon account-icon" title="Contul Meu">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="cart-wrapper">
+                        <a href="#cart" class="action-icon cart-icon" title="Coș">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background" style="background-image: url('images/large1.jpeg');"></div>
+        <div class="hero-background mobile-background" style="background-image: url('images/mobile.jpeg');"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle" data-speed="0.85">Buchetărie Artizanală</span>
+            <h1 data-speed="0.9">Creații Florale<br><span class="mobile-hide">pentru Suflet</span></h1>
+            <p class="desktop-only" data-speed="0.95">Transformăm momentele speciale în amintiri de neuitat prin aranjamente florale create cu pasiune și dedicare</p>
+            <p class="mobile-only" data-speed="0.95">Buchete create cu pasiune</p>
+            <div class="hero-buttons" data-speed="0.98">
+                <a href="#shop" class="cta-button primary">Descoperă Colecția</a>
+                <a href="#custom" class="cta-button secondary">Buchet Personalizat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header compact">
+                <span class="section-accent">Preferatele Clienților Noștri</span>
+                <h2 class="section-title">Cele Mai Îndrăgite Buchete</h2>
+                <p class="section-subtitle">Peste 10.000 de buchete livrate • Recenzii 5⭐</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <a href="product1-detail.html" class="product-link">
+                        <div class="product-image">
+                            <img src="images/10.jpg" alt="Ecuador Premium Roses">
+                            <span class="product-badge">Luxury</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-description">Buchet VIP 101 Trandafiri</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(4.6/5 din 33 review-uri)</span>
+                            </div>
+                            <div class="price-cart">
+                                <div class="price-info">
+                                    <span class="original-price">3.500 RON</span>
+                                    <span class="price">2.222 RON</span>
+                                    <span class="save-amount">Economisești: 1.278 RON</span>
+                                    <span class="availability">In stoc - Livrare Rapidă</span>
+                                </div>
+                                <button class="add-to-cart" data-id="3">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>Adaugă în Coș</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <a href="product2-detail.html" class="product-link">
+                        <div class="product-image">
+                            <img src="images/3.jpg" alt="Ecuador Premium Roses">
+                            <span class="product-badge">Luxury</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-description">Buchet VIP 51 Trandafiri</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(4.5/5 din 28 review-uri)</span>
+                            </div>
+                            <div class="price-cart">
+                                <div class="price-info">
+                                    <span class="original-price">1.800 RON</span>
+                                    <span class="price">1.111 RON</span>
+                                    <span class="save-amount">Economisești: 689 RON</span>
+                                    <span class="availability">In stoc - Livrare Rapidă</span>
+                                </div>
+                                <button class="add-to-cart" data-id="3">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>Adaugă în Coș</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+<!-- Product Card 3 -->
+<div class="product-card">
+    <a href="product-detail.html" class="product-link">
+        <div class="product-image">
+            <img src="images/4.jpg" alt="Ecuador Premium Roses">
+            <span class="product-badge">Luxury</span>
+        </div>
+        <div class="product-info">
+            <h3 class="product-description">Buchet NORMAL 101 Trandafiri</h3>
+            <div class="product-rating">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="rating-count">(4.4/5 din 25 review-uri)</span>
+            </div>
+            <div class="price-cart">
+                <div class="price-info">
+                    <span class="original-price">1.850 RON</span>
+                    <span class="price">1.111 RON</span>
+                    <span class="save-amount">Economisești: 739 RON</span>
+                    <span class="availability">In stoc - Livrare Rapidă</span>
+                </div>
+                <button class="add-to-cart" data-id="3">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Adaugă în Coș</span>
+                </button>
+            </div>
+        </div>
+    </a>
+</div>
+            </div>
+
+            <div class="benefits-section">
+                <div class="benefits-intro">
+                    <p class="elegant-lead">Artizanii Frumuseții</p>
+                    <h2 class="benefits-title">Creăm mai mult decât buchete, <br>creăm <span class="highlight">amintiri prețioase</span></h2>
+                    <div class="separator">
+                        <span class="line"></span>
+                        <i class="fas fa-flower"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-gem"></i>
+                        <h3>Selecție Premium</h3>
+                        <p>Colaborăm direct cu grădini renumite pentru a-ți aduce cele mai frumoase flori</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Atenție la Detalii</h3>
+                        <p>Fiecare buchet este o operă de artă, creată cu pasiune și măiestrie</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Livrare cu Grijă</h3>
+                        <p>Transport special pentru flori, cu temperatura controlată și ambalare protectivă</p>
+                    </div>
+                </div>
+                
+                <div class="stats-showcase">
+                    <div class="stats-card">
+                        <div class="stats-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stats-content">
+                            <div class="stats-progress">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="stats-value">12+</span>
+                            </div>
+                            <h4>Ani de Experiență</h4>
+                            <p>Pasiune pentru Artă Florală</p>
+                        </div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="stats-content">
+                            <div class="stats-progress">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="stats-value">10k+</span>
+                            </div>
+                            <h4>Buchete Livrate</h4>
+                            <p>Momente de Bucurie Create</p>
+                        </div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stats-content">
+                            <div class="stats-progress">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="98, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="stats-value">98%</span>
+                            </div>
+                            <h4>Clienți Mulțumiți</h4>
+                            <p>Recenzii de 5 Stele</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Ani de Experiență</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Buchete Livrate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Clienți Mulțumiți</span>
+                    </div>
+                </div>
+
+                <div class="flower-quote">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="quote-text">Transformăm momentele speciale în amintiri de neuitat, un trandafir după altul</p>
+                    <span class="quote-author">— Echipa Bloomery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-section contact-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Telefon</span>
+                                    <a href="tel:+40722123456">+40 722 123 456</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <a href="mailto:contact@bloomery.ro">contact@bloomery.ro</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Adresă</span>
+                                    <a href="https://goo.gl/maps" target="_blank">Strada Florilor 123, București</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-section links-section">
+                        <h3>Informații Utile</h3>
+                        <ul>
+                            <li><a href="#">Despre Noi</a></li>
+                            <li><a href="#">Termeni și Condiții</a></li>
+                            <li><a href="#">Politica de Confidențialitate</a></li>
+                            <li><a href="#">Politica de Retur</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section schedule-section">
+                        <h3>Program</h3>
+                        <ul class="schedule-list">
+                            <li>
+                                <span class="day">Luni - Vineri</span>
+                                <span class="hours">09:00 - 20:00</span>
+                            </li>
+                            <li>
+                                <span class="day">Sâmbătă</span>
+                                <span class="hours">10:00 - 18:00</span>
+                            </li>
+                            <li>
+                                <span class="day">Duminică</span>
+                                <span class="hours">10:00 - 16:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-section social-section">
+                        <h3>Urmărește-ne</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <div class="newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Abonează-te pentru noutăți și oferte speciale</p>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Adresa ta de email" required>
+                                <button type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Bloomery. Toate drepturile rezervate.</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-apple-pay"></i>
+                        <i class="fab fa-google-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

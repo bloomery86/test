@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noutăți | Bloomery</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/noutati.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GSAP and Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/components.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/components.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">
+                        <i class="fas fa-flower"></i>
+                        <span class="logo-text">BLOOM<span class="accent">ERY</span></span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/"><i class="fas fa-seedling"></i> Acasa</a></li>
+                        <li><a href="#bestsellers"><i class="fas fa-crown"></i> Bestsellers</a></li>
+                        <li><a href="/noutati.html"><i class="fas fa-leaf"></i> Colecții</a></li>
+                        <li><a href="/despre-noi.html"><i class="fas fa-heart"></i> Despre Noi</a></li>
+                    </ul>
+                    <div class="mobile-nav-actions">
+                        <a href="#search" class="action-icon search-icon" title="Căutare">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#account" class="action-icon account-icon" title="Contul Meu">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="cart-wrapper">
+                            <a href="#cart" class="action-icon cart-icon" title="Coș">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <button class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header-actions">
+                    <a href="#search" class="action-icon search-icon" title="Căutare">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#account" class="action-icon account-icon" title="Contul Meu">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="cart-wrapper">
+                        <a href="#cart" class="action-icon cart-icon" title="Coș">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="heading-container">
+                <div class="heading-line">
+                    <span class="heading-accent">Galerie</span>
+                </div>
+                <h2 class="heading-main">Cele Mai Noi Creații Florale</h2>
+                <p class="section-description">Explorează cele mai recente aranjamente florale create cu pasiune și atenție la detalii</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <div class="item-inner">
+                        <img src="./product-image/3.jpg" alt="Buchet Trandafiri Roz">
+                        <div class="price-tag">259 Lei</div>
+                        <div class="item-overlay">
+                            <h3>Buchet Trandafiri Roz</h3>
+                            <p>Buchet elegant cu trandafiri roz</p>
+                            <button class="btn-view">Vezi Detalii</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item large">
+                    <div class="item-inner">
+                        <img src="./product-image/d3.jpeg" alt="Mix Floral de Primăvară">
+                        <div class="price-tag">189 Lei</div>
+                        <div class="item-overlay">
+                            <h3>Mix Floral de Primăvară</h3>
+                            <p>Mix de flori proaspete și culori vibrante</p>
+                            <button class="btn-view">Vezi Detalii</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <div class="item-inner">
+                        <img src="./product-image/d4.jpg" alt="Aranjament Luxuriant">
+                        <div class="price-tag">349 Lei</div>
+                        <div class="item-overlay">
+                            <h3>Aranjament Luxuriant</h3>
+                            <p>Aranjament floral luxuriant și elegant</p>
+                            <button class="btn-view">Vezi Detalii</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item vertical">
+                    <div class="item-inner">
+                        <img src="./product-image/4.jpg" alt="Buchet Romantic">
+                        <div class="price-tag">289 Lei</div>
+                        <div class="item-overlay">
+                            <h3>Buchet Romantic</h3>
+                            <p>Buchet romantic cu trandafiri și lăcrămioare</p>
+                            <button class="btn-view">Vezi Detalii</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <div class="item-inner">
+                        <img src="./product-image/5.jpg" alt="Aranjament Elegant">
+                        <div class="price-tag">299 Lei</div>
+                        <div class="item-overlay">
+                            <h3>Aranjament Elegant</h3>
+                            <p>Aranjament floral elegant și rafinat</p>
+                            <button class="btn-view">Vezi Detalii</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item large">
+                    <div class="item-inner">
+                        <img src="./product-image/ddd.jpg" alt="Buchet Vintage">
+                        <div class="price-tag">279 Lei</div>
+                        <div class="item-overlay">
+                            <h3>Buchet Vintage</h3>
+                            <p>Buchet vintage cu flori și elemente decorative</p>
+                            <button class="btn-view">Vezi Detalii</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-section contact-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Strada Florilor 123, București</li>
+                        <li><i class="fas fa-phone"></i> +40 721 234 567</li>
+                        <li><i class="fas fa-envelope"></i> contact@bloomery.ro</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Program</h3>
+                    <ul>
+                        <li>Luni - Vineri: 09:00 - 20:00</li>
+                        <li>Sâmbătă: 10:00 - 18:00</li>
+                        <li>Duminică: 10:00 - 16:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informații</h3>
+                    <ul>
+                        <li><a href="#">Despre Noi</a></li>
+                        <li><a href="#">Termeni și Condiții</a></li>
+                        <li><a href="#">Politica de Confidențialitate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Abonează-te pentru noutăți și oferte speciale</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Adresa ta de email">
+                        <button type="submit">Abonare</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bloomery. Toate drepturile rezervate.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/noutati.js"></script>
+</body>
+</html>
