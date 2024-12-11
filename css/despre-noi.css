@@ -275,15 +275,39 @@
 
 /* Hero Section */
 .despre-hero {
-   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('../../product-image/despre.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 90vh;
     display: flex;
     align-items: center;
     color: white;
-    position: relative;
     margin-top: 70px;
+    overflow: hidden;
+}
+
+.despre-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+    z-index: 1;
+}
+
+.despre-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.despre-hero .despre-container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
@@ -399,7 +423,7 @@
 /* About Section */
 .despre-section {
     padding: 8rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url('/product-image/bg.jpeg');
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url('../product-image/bg.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1002,5 +1026,3 @@
 body {
     margin-top: 80px;
 }
-
-
