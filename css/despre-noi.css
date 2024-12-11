@@ -275,7 +275,7 @@
 
 /* Hero Section */
 .despre-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('./product-image/despre.jpg');
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('../../product-image/despre.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
